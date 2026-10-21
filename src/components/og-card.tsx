@@ -1,0 +1,62 @@
+import { site } from "@/config/site";
+
+export const ogSize = { width: 1200, height: 630 };
+
+/** Texto alternativo da imagem Open Graph padrão do site (`src/app/opengraph-image.tsx`). */
+export const siteOgAlt = `${site.name}, ${site.role}`;
+
+type OgCardProps = {
+  eyebrow: string;
+  title: string;
+  subtitle: string;
+};
+
+/**
+ * Layout das imagens Open Graph. Renderizado pelo `ImageResponse` (Satori), que só
+ * entende estilos inline e exige `display: flex` em elementos com mais de um filho.
+ */
+export function OgCard({ eyebrow, title, subtitle }: OgCardProps) {
+  return (
+    <div
+      style={{
+        width: "100%",
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        padding: 72,
+        background: "#0f172a",
+        backgroundImage:
+          "linear-gradient(rgba(147,197,253,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(147,197,253,0.07) 1px, transparent 1px)",
+        backgroundSize: "48px 48px",
+        color: "#e2e8f0",
+        borderTop: "8px solid #60a5fa",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: 16,
+          fontSize: 28,
+          color: "#93c5fd",
+          letterSpacing: 4,
+        }}
+      >
+        <div
+          style={{ display: "flex", width: 14, height: 14, borderRadius: 7, background: "#93c5fd" }}
+        />
+        {eyebrow.toUpperCase()}
+      </div>
+      <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
+        <div style={{ display: "flex", fontSize: 64, fontWeight: 700, lineHeight: 1.15 }}>
+          {title}
+        </div>
+        <div style={{ display: "flex", fontSize: 32, color: "#94a3b8" }}>{subtitle}</div>
+      </div>
+      <div style={{ display: "flex", fontSize: 28, color: "#94a3b8" }}>
+        {site.name} · {site.role}
+      </div>
+    </div>
+  );
+}

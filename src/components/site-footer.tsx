@@ -1,0 +1,26 @@
+import { site } from "@/config/site";
+import { ExternalLink } from "./external-link";
+
+export function SiteFooter() {
+  return (
+    <footer className="border-border text-muted border-t">
+      <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-8 text-sm">
+        <p className="font-mono">
+          {site.name} · {site.role}
+        </p>
+        <ul className="flex flex-wrap gap-x-5 gap-y-2">
+          <li>
+            <ExternalLink href={site.links.linkedin} className="hover:text-foreground underline">
+              LinkedIn
+            </ExternalLink>
+          </li>
+          <li>
+            <ExternalLink href={site.links.github} className="hover:text-foreground underline">
+              GitHub
+            </ExternalLink>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  );
+}
