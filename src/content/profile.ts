@@ -19,7 +19,7 @@ export const profile = {
   asOf: "2026-10" as YearMonth,
   careerStart: "1994-01" as YearMonth,
   bio: [
-    "Sou Analista de Engenharia de Software Pleno, com trajetória em desenvolvimento, integração, sustentação e modernização de sistemas corporativos. Minha experiência combina mercado financeiro, saúde e seguros, ERP, recursos humanos e soluções fiscais.",
+    "Sou Analista de Engenharia de Software Sênior, com trajetória em desenvolvimento, integração, sustentação e modernização de sistemas corporativos. Minha experiência combina mercado financeiro, saúde e seguros, ERP, recursos humanos e soluções fiscais.",
     "Trabalho principalmente com C#, .NET, Node.js, TypeScript e APIs REST. Nos projetos mais recentes, tenho atuado na evolução de aplicações legadas para arquiteturas BFF e na integração segura com plataformas corporativas como SAP e Salesforce.",
     "Ao longo da carreira, participei de ambientes de missão crítica no mercado de capitais, aplicações para saúde e seguros e soluções corporativas de alta complexidade. Também trabalho com cloud, DevOps, observabilidade e diferentes gerações de sistemas.",
   ],
