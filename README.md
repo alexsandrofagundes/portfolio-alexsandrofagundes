@@ -1,6 +1,6 @@
 # Portfólio — Alex Sandro Fagundes
 
-Portfólio profissional de Alex Sandro Fagundes, Analista de Engenharia de Software Pleno, com experiência em C#, .NET, Node.js, TypeScript, APIs REST, BFF e sistemas corporativos.
+Portfólio profissional de Alex Sandro Fagundes, Analista de Engenharia de Software Senior, com experiência em C#, .NET, Node.js, TypeScript, APIs REST, BFF e sistemas corporativos.
 
 O conteúdo reúne uma trajetória profissional iniciada em 1994, com atuação em mercado financeiro e de capitais, saúde e seguros, ERP, recursos humanos e soluções fiscais. A seção de projetos destaca repositórios públicos de estudo e código aberto; sistemas corporativos são apresentados como experiência profissional, sem expor código proprietário.
 
