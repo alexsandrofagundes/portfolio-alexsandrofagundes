@@ -1,6 +1,6 @@
 export const site = {
   name: "Alex Sandro Fagundes",
-  role: "Analista de Engenharia de Software Sênior",
+  role: "Analista de Engenharia de Software Senior",
   description:
     "Profissional de tecnologia com experiência em C#, .NET, Node.js, TypeScript, APIs REST, BFF e sistemas corporativos críticos.",
   focusAreas: [
