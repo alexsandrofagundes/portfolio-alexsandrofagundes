@@ -38,6 +38,6 @@ export const portfolioProjects: readonly PortfolioProject[] = [
     description: "Template inicial para criação e execução de workflows.",
     language: "TypeScript",
     href: "https://github.com/alexsandrofagundes/workflows-starter-template",
-    projectHref: "https://chanfana-openapi-template.clubemobile.workers.dev/",
+    projectHref: "https://workflows-starter-template.clubemobile.workers.dev/",
   },
 ];
