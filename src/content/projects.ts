@@ -3,6 +3,7 @@ export type PortfolioProject = {
   description: string;
   language: string;
   href: string;
+  projectHref?: string;
 };
 
 export const portfolioProjects: readonly PortfolioProject[] = [
@@ -26,9 +27,17 @@ export const portfolioProjects: readonly PortfolioProject[] = [
     href: "https://github.com/alexsandrofagundes/IntensivaoJavaScript",
   },
   {
-    name: "DomBosco",
-    description: "Exemplo de aplicação com PHP, HTML e conexão com MySQL.",
-    language: "PHP",
-    href: "https://github.com/alexsandrofagundes/DomBosco",
+    name: "Chanfana OpenAPI",
+    description: "Template de API REST com documentação OpenAPI.",
+    language: "TypeScript",
+    href: "https://github.com/alexsandrofagundes/chanfana-openapi-template",
+    projectHref: "https://chanfana-openapi-template.clubemobile.workers.dev/",
+  },
+  {
+    name: "WorkFlows Starter",
+    description: "Template inicial para criação e execução de workflows.",
+    language: "TypeScript",
+    href: "https://github.com/alexsandrofagundes/workflows-starter-template",
+    projectHref: "https://chanfana-openapi-template.clubemobile.workers.dev/",
   },
 ];

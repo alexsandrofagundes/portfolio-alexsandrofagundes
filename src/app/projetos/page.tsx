@@ -5,7 +5,7 @@ import { portfolioProjects } from "@/content/projects";
 import { pageMetadata } from "@/lib/metadata";
 
 const description =
-  "Projetos públicos de Alex Fagundes em inteligência artificial, Python, JavaScript e desenvolvimento web.";
+  "Projetos públicos de Alex Fagundes em inteligência artificial, Python, JavaScript, APIs REST e workflows.";
 
 export const metadata: Metadata = pageMetadata({
   title: "Projetos",
@@ -37,12 +37,22 @@ export default function ProjetosPage() {
                 <h2 className="text-xl font-semibold tracking-tight">{project.name}</h2>
                 <p className="text-muted leading-relaxed">{project.description}</p>
               </div>
-              <ExternalLink
-                href={project.href}
-                className="text-accent mt-auto font-medium underline underline-offset-4"
-              >
-                Explorar repositório
-              </ExternalLink>
+              <div className="mt-auto flex flex-wrap gap-x-5 gap-y-2">
+                {project.projectHref && (
+                  <ExternalLink
+                    href={project.projectHref}
+                    className="text-accent font-medium underline underline-offset-4"
+                  >
+                    Acessar projeto
+                  </ExternalLink>
+                )}
+                <ExternalLink
+                  href={project.href}
+                  className="text-accent font-medium underline underline-offset-4"
+                >
+                  Explorar repositório
+                </ExternalLink>
+              </div>
             </article>
           </li>
         ))}
